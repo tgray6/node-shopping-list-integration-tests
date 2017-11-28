@@ -24,7 +24,7 @@ router.get('/', (req, res) => {
 // log an error and return a 400 status code. if okay,
 // add new item to ShoppingList and return it with a 201.
 router.post('/', jsonParser, (req, res) => {
-  // ensure `name` and `budget` are in request body
+  // ensure `name` and `checked` are in request body
   const requiredFields = ['name', 'checked'];
   for (let i=0; i<requiredFields.length; i++) {
     const field = requiredFields[i];
