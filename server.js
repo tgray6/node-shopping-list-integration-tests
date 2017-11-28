@@ -11,12 +11,12 @@ const recipesRouter = require('./recipesRouter');
 //ADDED THIS AS A NOTE, THIS IS SO YOU CAN ENABLE CORS,
 //If it gets more complex on coding, use the cors dependency with npm install cors
 //https://github.com/expressjs/cors
-app.use(function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
-  next();
-});
+// app.use(function (req, res, next) {
+//   res.header('Access-Control-Allow-Origin', '*');
+//   res.header('Access-Control-Allow-Headers', 'Content-Type');
+//   res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
+//   next();
+// });
 
 // log the http layer
 app.use(morgan('common'));
